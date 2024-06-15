@@ -8,7 +8,7 @@ const correctPass = '123'
 const helpEmail = document.querySelector('.help-email')
 const helpPass = document.querySelector('.help-pass')
 
-export const tokenName = '@MahindraCoins:token'
+const tokenName = '@MahindraCoins:token'
 
 function focusInput() {
     errorMsg.textContent = ''

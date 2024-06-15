@@ -4,8 +4,8 @@
     --primary-white: #ffff;
     --primary-orange: #d97f1f;
     --primary-yellow: #dcac51;
+    --primary-green: #38b000;
 }
-
 
 @media(min-width: 1024px) {
     header>nav {
@@ -42,13 +42,27 @@
         column-gap: 1rem;
     }
 
-    header >nav>div>figure{
+    header>nav>div>figure {
         width: 30px;
         height: 30px;
         padding: 2px;
+        position: relative;
     }
 
-    header >nav>div>figure:nth-child(2){
+    header>nav>div>figure>small{
+        position: absolute;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
+        top: -.5rem;
+        left: -.5rem;
+        border-radius: 100px;
+        text-align: center;
+        background-color: var(--primary-green);
+        color: var(--primary-white);
+    }
+
+    header>nav>div>figure:nth-child(2) {
         border: 1px solid;
         border-radius: 100px;
     }

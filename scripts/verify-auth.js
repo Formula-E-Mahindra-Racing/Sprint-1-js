@@ -1,4 +1,4 @@
-import { tokenName } from "./login";
+const tokenName = '@MahindraCoins:token'
 
 function verifyAuth() {
     try {
