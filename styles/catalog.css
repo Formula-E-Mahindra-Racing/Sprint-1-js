@@ -7,7 +7,7 @@
     --primary-black: rgba(0, 0, 0, .6);
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 0px) {
     .catalog {
         display: flex;
         flex-direction: column;
@@ -15,9 +15,11 @@
 
     .catalog>section {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
+        row-gap: 4rem;
     }
 
     .catalog-card {
@@ -72,4 +74,10 @@
         border-radius: 8px;
     }
 
+}
+
+@media(min-width: 1024px) {
+    .catalog>section {
+        flex-direction: row;
+    }
 }
