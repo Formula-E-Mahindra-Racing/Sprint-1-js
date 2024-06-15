@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/how-it-work.css">
     <link rel="stylesheet" href="styles/catalog.css">
     <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <script src="scripts/slider.js" defer></script>
 
@@ -23,7 +24,7 @@
 <body>
 
     <!-- Home section start -->
-    <header>
+    <header id="home">
         <nav>
             <picture class='logo-header'>
                 <img src="assets/icons/icon-coin.png" alt="Icon logo"/>
@@ -31,10 +32,10 @@
             </picture>
 
             <ul>
-                <li><a href="#">Become a renter</a></li>
-                <li><a href="#">Rental deals</a></li>
-                <li><a href="#">How it work</a></li>
-                <li><a href="#">Why choose us</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><button type="button">Sign out</button></li>
             </ul>
 
             <div>
@@ -83,7 +84,7 @@
     <!-- Home section end -->
 
     <!-- How it work section start -->
-    <section class="how-it-work-parent">
+    <section class="how-it-work-parent" id="how-it-works">
         <div class="section-title">
             <span>how it works</span>
             <h2>The versatile E-Coin for you</h2>
@@ -110,7 +111,7 @@
     <!-- How it work section end -->
 
     <!-- Catalog section start -->
-    <section class="catalog">
+    <section class="catalog" id="shop">
         <div class="section-title">
             <span>Popular shop items</span>
             <h2>Most popular items on the store</h2>
@@ -164,7 +165,7 @@
     <!-- Catalog section end -->
 
     <!-- Review section start -->
-    <section class="review">
+    <section class="review" id="testimonials">
         <div class="section-title">
             <span>Testimonials</span>
             <h2>What people say about us?</h2>
@@ -240,6 +241,55 @@
     </section>
     <!-- Review section end -->
 
+    <!-- Footer start -->
+    <footer>
+        <section>
+            <ul>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-coin.png" alt="Icon logo"/>
+                    <span>mc</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-location.png" alt="Icon logo"/>
+                    <span>1992 Ave, Hastings, <br /> BC, Canada</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-phone.png" alt="Icon logo"/>
+                    <span>+556 2001 2010</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-mail.png" alt="Icon logo"/>
+                    <span>mahindracoins@gmail.com</span>
+                    </picture>
+                </li>
+            </ul>
+
+            <ul>
+                <li><h4>The Website</h4></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+
+            <ul>
+                <li><h4>About Us</h4></li>
+                <li><a href="">Why</a></li>
+                <li><a href="">The Story Behind</a></li>
+                <li><a href="">People involved</a></li>
+                <li><a href="">Advertise</a></li>
+            </ul>
+        </section>
+        <section>Copyright 2024 - Mahindra Coins, All Rights Reserved</section>
+    </footer>
+    <!-- Footer end -->
 
 
 
