@@ -18,14 +18,15 @@ body {
     background-color: var(--primary-grey);
     color: var(--primary-white);
 }
+
 @media(min-width: 0px) {
     .section-title {
-        margin-top: 15rem;
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
         align-items: center;
-        margin-bottom: 2rem;
+        width: 80%;
+        margin: 15rem auto 5rem;
     }
 
     .section-title span {
@@ -42,6 +43,12 @@ body {
 
 
 @media(min-width: 1024px) {
+    .section-title {
+        width: 100%;
+        margin-inline: 0;
+        margin-bottom: 2rem;
+    }
+
     .section-title h2 {
         font-size: 2rem;
     }
