@@ -1,3 +1,11 @@
+:root {
+    --primary-grey: #242424;
+    --primary-red: #B81D1A;
+    --primary-white: #ffff;
+    --primary-orange: #d97f1f;
+    --primary-yellow: #dcac51;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -6,4 +14,6 @@ body {
     /* font-family: "Inter", sans-serif; */
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    background-color: var(--primary-grey);
+    color: var(--primary-white);
 }
