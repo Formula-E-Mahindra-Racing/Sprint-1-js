@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/icons/icon-coin.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/how-it-work.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="scripts/verify-auth.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/add-to-cart.js" defer></script>
+
+    <title>Mahindra Coins</title>
+</head>
+<body>
+
+    <!-- Home section start -->
+    <header id="home">
+        <nav>
+            <picture class='logo-header'>
+                <img src="assets/icons/icon-coin.png" alt="Icon logo"/>
+                <span>mc</span>
+            </picture>
+
+            <ul>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><button type="button" onclick="signOut()">Sign out</button></li>
+            </ul>
+
+            <div>
+                <figure>
+                    <img src="assets/icons/icon-cart.png" alt="Cart icon"/>
+                    <small>0</small>
+                </figure>
+                <figure><img src="assets/icons/icon-person.png" alt="Profile icon"/></figure>
+            </div>
+        </nav>
+
+        <nav class="hamburger-menu" onclick="hamburgerMenu()">
+            <img src="assets/icons/icon-hamburger-menu.png" alt="Hamburger menu"/>
+        </nav>
+        <section class="hamburger-menu-tela no-show">
+            <img 
+                class="hamburger-close" 
+                src="assets/icons/icon-close.png" 
+                alt="Exit"
+                onclick="hamburgerMenu()"
+            />
+            <ul>
+                <li><a onclick="hamburgerMenu()" href="#how-it-works">How it works</a></li>
+                <li><a onclick="hamburgerMenu()" href="#shop">Shop</a></li>
+                <li><a onclick="hamburgerMenu()" href="#testimonials">Testimonials</a></li>
+                <li><button type="button" onclick="signOut()">Sign out</button></li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="home-hero">
+            <!-- Hero section -->
+        <article>
+            <h1>The official <br/> E-Coin provided by <span>Mahindra</span></h1>
+            <small>Get coins by interacting with the plataform. Use these coins to get cool items and racing tickets!</small>
+        </article>
+
+        <picture>
+            <!-- Mahindra car -->
+            <img src="assets/mahindra-car.webp" alt="Mahindra Formula-E car"/>
+        </picture>
+    </section>
+
+    <section class="header-bottom-bar">
+        <div>
+            <img src="assets/icons/icon-token.png" alt="Token icon"/>
+            <p>
+                <span>Bet</span>
+                <small>Bet with our coins</small>
+            </p>
+        </div>
+        <div>
+            <img src="assets/icons/icon-store.png" alt="Token icon"/>
+            <p>
+                <span>Purchase</span>
+                <small>Safe purchases</small>
+            </p>
+        </div>
+        <div>
+            <img src="assets/icons/icon-flag.png" alt="Token icon"/>
+            <p>
+                <span>Races</span>
+                <small>Watch Formula-E</small>
+            </p>
+        </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- How it work section start -->
+    <section class="how-it-work-parent" id="how-it-works">
+        <div class="section-title">
+            <span>how it works</span>
+            <h2>The versatile E-Coin for you</h2>
+        </div>
+
+        <section>
+            <picture>
+                <div><img src="assets/icons/icon-store.png" alt="Icon store"/></div>
+                <h4>In app purchases</h4>
+                <small>Buy any Formula-E merchandise with Mahindra Coins</small>
+            </picture>
+            <picture>
+                <div><img src="assets/icons/icon-token.png" alt="Icon token"/></div>
+                <h4>Betting time</h4>
+                <small>Bet on the race and be rewarded with E-Coins</small>
+            </picture>
+            <picture>
+                <div><img src="assets/icons/icon-flag.png" alt="Icon flag"/></div>
+                <h4>Watch Races</h4>
+                <small>The more you watch the more MCs you gain</small>
+            </picture>
+        </section>
+    </section>
+    <!-- How it work section end -->
+
+    <!-- Catalog section start -->
+    <section class="catalog" id="shop">
+        <div class="section-title">
+            <span>Popular shop items</span>
+            <h2>Most popular items on the store</h2>
+        </div>
+
+        <section>
+            <div class="catalog-card">
+                <figure>
+                    <img src="assets/mahindra-t-shirt.jpeg" alt="Merchandise 1"/>
+                </figure>
+                <div>
+                    <h4>Mahindra T-Shirt</h4>
+                    <p>⭐ 4.8 <span>(2.321 reviews)</span></p>
+                    <span>Sizes: S - XL </span>
+
+                    <p><bold>Price</bold><bold>400<small>MC</small></bold></p>
+
+                    <button
+                        type="button"
+                        onclick="addToCart()"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <figure>
+                    <img src="assets/mahindra-ticket.jpeg" alt="Merchandise 2"/>
+                </figure>
+                <div>
+                    <h4>Formula-E Ticket</h4>
+                    <p>⭐ 5.0 <span>(3.001 reviews)</span></p>
+                    <span>Next race: São Paulo</span>
+
+                    <p><bold>Price</bold><bold>2000<small>MC</small></bold></p>
+
+                    <button
+                        type="button"
+                        onclick="addToCart()"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <figure>
+                    <img src="assets/mahindra-mug.jpeg" alt="Merchandise 3"/>
+                </figure>
+                <div>
+                    <h4>Mahindra Mug</h4>
+                    <p>⭐ 4.9 <span>(1.576 reviews)</span></p>
+                    <span>Size: 150mL</span>
+
+                    <p><bold>Price</bold><bold>150<small>MC</small></bold></p>
+
+                    <button
+                        type="button"
+                        onclick="addToCart()"
+                    >
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Catalog section end -->
+
+    <!-- Review section start -->
+    <section class="review" id="testimonials">
+        <div class="section-title">
+            <span>Testimonials</span>
+            <h2>What people say about us?</h2>
+        </div>
+
+        <div class="slider">
+            <button class="arrow left">&lt;</button>
+
+            <div class="slide active">
+                <img src="assets/woman.jpg"alt="Image 1">
+                <article>
+                    <div>
+                        <p><bold>5.0</bold>stars</p>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+
+                    <blockquote>
+                        "I love it! There is always a way to get the Mahindra Coins (MCs). So I have been treating myself some merch for a while 👀😅. Felling a little spoiled."
+                        <br />
+                        <br />
+                        <span>#mahindracoins #mcs #formulae</span>
+                    </blockquote>
+                    <p>
+                        <bold>Charlie Johnson</bold>
+                        <small>From New York, US</small>
+                    </p>
+                </article>
+            </div>
+
+            <div class="slide">
+                <img src="assets/couple.jpg" alt="Image 2">
+                <article>
+                    <div>
+                        <p><bold>5.0</bold>stars</p>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+
+                    <blockquote>
+                        "I just make so much sense for us... We love Formula-E and now getting massive discounts to watch the races is huge!! "
+                        <br />
+                        <br />
+                        <span>#techmahindra #formulae #stonks</span>
+                    </blockquote>
+                    <p>
+                        <bold>Jackie & Matt Thompson</bold>
+                        <small>From Rio de Janeiro, Brazil</small>
+                    </p>
+                </article>
+            </div>
+
+            <div class="slide">
+                <img src="assets/man.jpg" alt="Image 3">
+                <article>
+                    <div>
+                        <p><bold>4.0</bold>stars</p>
+                        <span>⭐⭐⭐⭐</span>
+                    </div>
+
+                    <blockquote>
+                        "Never been a big fan of the sport. But honestly, it grew on me. I reggret to inform of not giving five stars because I got a new addiction 😅 and it is electric⚡"
+                        <br />
+                        <br />
+                        <span>#formulae #electric #mcs</span>
+                    </blockquote>
+                    <p>
+                        <bold>William Greenstone</bold>
+                        <small>From Vancouver, Canada</small>
+                    </p>
+                </article>
+            </div>
+            <button class="arrow right">&gt;</button>
+        </div>
+    </section>
+    <!-- Review section end -->
+
+    <!-- Footer start -->
+    <footer>
+        <section>
+            <ul>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-coin.png" alt="Icon logo"/>
+                    <span>mc</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-location.png" alt="Icon logo"/>
+                    <span>1992 Ave, Hastings, <br /> BC, Canada</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-phone.png" alt="Icon logo"/>
+                    <span>+556 2001 2010</span>
+                    </picture>
+                </li>
+                <li>    
+                    <picture>
+                    <img src="assets/icons/icon-mail.png" alt="Icon logo"/>
+                    <span>mahindracoins@gmail.com</span>
+                    </picture>
+                </li>
+            </ul>
+
+            <ul>
+                <li><h4>The Website</h4></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+
+            <ul>
+                <li><h4>About Us</h4></li>
+                <li><a href="">Why</a></li>
+                <li><a href="">The Story Behind</a></li>
+                <li><a href="">People involved</a></li>
+                <li><a href="">Advertise</a></li>
+            </ul>
+        </section>
+        <section>Copyright 2024 - Mahindra Coins, All Rights Reserved</section>
+    </footer>
+    <!-- Footer end -->
+</body>
+</html>
+

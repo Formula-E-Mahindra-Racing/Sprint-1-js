@@ -1,0 +1,128 @@
+:root {
+    --primary-grey: #242424;
+    --primary-red: #B81D1A;
+    --primary-white: #ffff;
+    --primary-orange: #d97f1f;
+    --primary-yellow: #dcac51;
+    --primary-black: rgba(0, 0, 0, .6);
+}
+
+@media(min-width: 0px) {
+    .slider {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        color: var(--primary-grey);
+
+        margin-bottom: 10rem;
+    }
+
+    .slider img {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+    }
+
+    .slider .slide.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slide article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem 1.5rem;
+    }
+
+    .slide>article div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+
+    .slide>article div bold {
+        font-size: 2rem;
+        margin-right: .25rem;
+    }
+
+    .slide>article blockquote span {
+        font-weight: 500;
+    }
+
+    .slide>article>p {
+        display: flex;
+        flex-direction: column;
+        margin-top: .5rem;
+    }
+
+    .slide>article>p bold {
+        font-size: 1.25rem;
+    }
+
+    .slide>article>p small {
+        color: #3f3f3f;
+    }
+
+    .arrow {
+        position: absolute;
+        /* top: 50%; */
+        bottom: -5rem;
+        transform: translateY(-50%);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 100px;
+        border: 1px solid var(--primary-white);
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow.left {
+        left: 3rem;
+
+    }
+
+    .arrow.right {
+        right: 3rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .slider {
+        width: 60%;
+    }
+
+    .slider img {
+        width: 45%;
+    }
+
+    .slider .slide.active {
+        flex-direction: row;
+    }
+
+    .arrow {
+        top: 50%;
+        bottom: 0;
+    }
+
+    .arrow.left {
+        left: -5rem;
+
+    }
+
+    .arrow.right {
+        right: -5rem;
+    }
+}
