@@ -20,7 +20,8 @@ function signOut(){
     }
 }
 
-function userAcceptsCookies(){
+function userAcceptsCookies(run=false){
+    if(!run) return
     const didAcceptCookie = prompt('Gostaria que suas informações sejam salvas através do sistema de cookies? (s/n)')
 
     while (didAcceptCookie !== 's' && didAcceptCookie !== 'n'){
