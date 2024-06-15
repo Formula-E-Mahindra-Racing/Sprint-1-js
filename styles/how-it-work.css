@@ -14,25 +14,6 @@
         row-gap: 2rem;
     }
 
-    .how-it-work-parent>div {
-        margin-top: 15rem;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-
-    .how-it-work-parent>div span {
-        background-color: var(--primary-black);
-        padding: .5rem 1rem;
-        border-radius: 8px;
-    }
-
-    .how-it-work-parent>div h2 {
-        font-size: 2rem;
-    }
-
     .how-it-work-parent>section {
         display: flex;
         justify-content: space-between;

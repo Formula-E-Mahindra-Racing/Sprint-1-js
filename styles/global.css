@@ -18,3 +18,23 @@ body {
     background-color: var(--primary-grey);
     color: var(--primary-white);
 }
+
+
+.section-title {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-title span {
+    background-color: var(--primary-black);
+    padding: .5rem 1rem;
+    border-radius: 8px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+}
