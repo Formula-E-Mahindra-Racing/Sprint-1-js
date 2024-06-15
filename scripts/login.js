@@ -2,8 +2,11 @@ const emailInput = document.querySelector('input[type="email"]')
 const passInput = document.querySelector('input[type="password"]')
 const errorMsg = document.querySelector('.error-msg')
 
+const SALT = '!woieq90u12340193uwqdhionfb;'
+
 const correctEmail = 'email@email.email'
-const correctPass = '123'
+const correctPass = '123' + SALT
+
 
 const helpEmail = document.querySelector('.help-email')
 const helpPass = document.querySelector('.help-pass')
@@ -15,7 +18,7 @@ function focusInput() {
 }
 
 function sendForm() {
-    if (emailInput.value === correctEmail && passInput.value === correctPass) return true
+    if (emailInput.value === correctEmail && passInput.value + SALT === correctPass) return true
 
     try {
         sessionStorage.removeItem(tokenName)
@@ -37,8 +40,9 @@ function isAlreadyLogged() {
 }
 
 function printCorrectUser(email, pass) {
+    const passWithoutSalt = `${pass[0]}${pass[1]}${pass[2]}`
     helpEmail.textContent += email
-    helpPass.textContent += pass
+    helpPass.textContent += passWithoutSalt
 }
 
 let seePasswordFlag = false
