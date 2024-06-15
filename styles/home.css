@@ -42,18 +42,15 @@
         column-gap: 1rem;
     }
 
-    header>nav button {
-        padding: .5rem 1rem;
-        border: 1px solid transparent;
-        border-radius: 8px;
+    header >nav>div>figure{
+        width: 30px;
+        height: 30px;
+        padding: 2px;
     }
 
-    header>nav button:hover {
-        border-color: var(--primary-white);
-    }
-
-    header button:nth-child(2) {
-        background-color: var(--primary-red);
+    header >nav>div>figure:nth-child(2){
+        border: 1px solid;
+        border-radius: 100px;
     }
 
     .home-hero {
@@ -73,7 +70,7 @@
 
     .home-hero h1 {
         font-size: 3rem;
-        line-height: 1.1;
+        line-height: 1.2;
     }
 
     .home-hero small {
@@ -137,5 +134,4 @@
         border-inline: 2px solid var(--primary-white);
         padding-inline: 1rem;
     }
-
 }

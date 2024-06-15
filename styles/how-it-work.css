@@ -1,0 +1,64 @@
+:root {
+    --primary-grey: #242424;
+    --primary-red: #B81D1A;
+    --primary-white: #ffff;
+    --primary-orange: #d97f1f;
+    --primary-yellow: #dcac51;
+    --primary-black: rgba(0, 0, 0, .2);
+}
+
+@media(min-width: 1024px) {
+    .how-it-work-parent {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .how-it-work-parent>div {
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .how-it-work-parent>div span {
+        background-color: var(--primary-black);
+        padding: .5rem 1rem;
+        border-radius: 8px;
+    }
+
+    .how-it-work-parent>div h2 {
+        font-size: 2rem;
+    }
+
+    .how-it-work-parent>section {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .how-it-work-parent picture {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        text-align: center;
+        align-items: center;
+        width: 20vw;
+    }
+
+    .how-it-work-parent picture div {
+        background-color: var(--primary-black);
+        margin-bottom: .25rem;
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .how-it-work-parent small {
+        color: #6d6d6d;
+    }
+}
