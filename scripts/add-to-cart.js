@@ -7,9 +7,6 @@ if(!totalAmountOfMCsNeeded) totalAmountOfMCsNeeded = 0
 cartCounter.textContent = totalAmountOfMCsNeeded 
 
 function addToCart() {
-    const isThereCart = sessionStorage.getItem(cartSessionName)
-    if (isThereCart === undefined) sessionStorage.setItem(cartSessionName, totalAmountOfMCsNeeded)
-
     totalAmountOfMCsNeeded++
     sessionStorage.setItem(cartSessionName, totalAmountOfMCsNeeded)
 
